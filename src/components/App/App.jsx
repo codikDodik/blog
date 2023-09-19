@@ -5,7 +5,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 //Components
 import { NotExistingPage } from '../NotExistingPage'
 import { PostsList } from '../PostsList'
-
+import { Post } from '../Post'
 import { RegistrationAndEntrance } from '../AccountManagement/RegistrationAndEntrance'
 import { ProfileManagement } from '../AccountManagement/ProfileManagement'
 import { SignUp } from '../FormAccountManagement/SignUp'
