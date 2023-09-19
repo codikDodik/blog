@@ -1,0 +1,54 @@
+@import '../../../assets/style.variable.scss';
+
+.profile-management {
+  display: flex;
+  align-items: center;
+}
+
+.button-create-post {
+  font-size: 14px;
+  color: $green;
+  border: 2px solid $green;
+  margin-right: 27px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.5s ease;
+}
+
+.button-create-post:hover {
+  color: white;
+  background-color: $green;
+  transition: background 0.5s ease;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-right: 27px;
+}
+
+.profile-name {
+  color: $text;
+  margin-right: 13px;
+}
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button-log-out {
+  font-size: 18px;
+  color: $text;
+  border: 2px solid $text;
+  margin-right: 27px;
+  padding: 11px 19px;
+  border-radius: 5px;
+  transition: background 0.5s ease;
+}
+
+.button-log-out:hover {
+  color: white;
+  background-color: $text;
+  transition: background 0.5s ease;
+}

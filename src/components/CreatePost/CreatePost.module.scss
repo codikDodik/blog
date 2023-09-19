@@ -1,0 +1,118 @@
+@import '../../assets/style.variable.scss';
+
+.wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  padding: 48px 32px;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+
+.input,
+.tag-text {
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.textarea {
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px 12px;
+  resize: none;
+}
+
+.textarea-error {
+  border-color: red;
+}
+
+.button {
+  max-width: 319px;
+  border-radius: 5px;
+  padding: 8px 0;
+  color: white;
+  background-color: $blue;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag,
+.tag-item {
+  height: 40px;
+  margin-top: 5px;
+  display: flex;
+  column-gap: 17px;
+}
+
+.tag-item {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.tag input,
+.tag-text {
+  margin-top: 0;
+  width: 300px;
+}
+
+.create-tag {
+  display: flex;
+  column-gap: 17px;
+}
+
+.button-delete-teg {
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  padding: 0px 36px;
+  transition: background-color 0.5s ease;
+}
+
+.button-delete-teg:hover {
+  color: white;
+  background-color: red;
+  transition: background-color 0.5s ease;
+}
+
+.button-add-tag {
+  align-self: flex-end;
+  height: 40px;
+  padding: 0 39px;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  color: $blue;
+  transition: background-color 0.5s ease;
+}
+
+.button-add-tag:hover {
+  background-color: $blue;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.span {
+  color: red;
+  font-size: 15px;
+}

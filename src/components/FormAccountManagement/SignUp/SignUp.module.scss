@@ -1,0 +1,23 @@
+@import '../../../assets/style.variable.scss';
+
+.label_checkbox {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.input {
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.hr {
+  height: 2px;
+  background-color: rgba(179, 179, 179, 0.632);
+}
+
+.hr-error {
+  height: 2px;
+  background-color: red;
+}

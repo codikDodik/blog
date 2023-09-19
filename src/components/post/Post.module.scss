@@ -1,0 +1,119 @@
+@import '../../assets/style.variable.scss';
+
+.post {
+  width: 90%;
+  background-color: $background_white;
+  padding: 15px 15px 33px 15px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: $blue;
+}
+
+.like {
+  cursor: pointer;
+  margin: 0 9px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.teg-list {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.teg {
+  border: 1px solid black;
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 3px;
+  transition: background 0.5s ease;
+}
+
+.teg:hover {
+  background-color: rgba(128, 128, 128, 0.523);
+  transition: background 0.5s ease;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.author__img {
+  border-radius: 50%;
+}
+
+.author__date-create-post {
+  font-size: 12px;
+  color: $gray;
+}
+
+.main {
+  margin-top: 11px;
+}
+
+.post-description {
+  max-width: 75%;
+  line-height: 27px;
+  overflow: hidden;
+  display: -webkit-box;
+  margin-bottom: 25px;
+}
+
+.post-text {
+  width: 93%;
+}
+
+.management-post {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-delete-post,
+.button-edit-post {
+  border-radius: 5px;
+  padding: 7px 16px;
+}
+
+.button-delete-post {
+  border: 1px solid red;
+  color: red;
+  transition: background-color 0.5s ease;
+}
+
+.button-delete-post:hover {
+  background-color: red;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.button-edit-post {
+  border: 1px solid $green;
+  color: $green;
+  transition: background-color 0.5s ease;
+}
+
+.button-edit-post:hover {
+  background-color: $green;
+  color: white;
+  transition: background-color 0.5s ease;
+}

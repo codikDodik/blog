@@ -1,18 +1,18 @@
-/* eslint-disable prettier/prettier */
+/* eslint-disable indent */
 export const CHANGE_PAGE = 'CHANGE_PAGE'
+const quantityShowPost = 5
 
 const initialState = {
-  limit: 5,
+  limit: quantityShowPost,
   offset: 0,
   page: 1,
 }
 
-export const changePageReducer = (state = initialState, action) => {
-  console.log('change page reducer', state.page)
+export const paginationReducer = (state = initialState, action) => {
   switch (action.type) {
-  case CHANGE_PAGE:
-    return { ...state, offset: action.page * state.limit - state.limit, page: action.page }
-  default:
-    return state
+    case CHANGE_PAGE:
+      return { ...state, offset: action.page * state.limit - state.limit, page: action.page }
+    default:
+      return state
   }
 }

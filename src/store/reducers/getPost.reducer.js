@@ -1,11 +1,13 @@
 /* eslint-disable indent */
 export const GET_POST = 'GET_POST'
+export const CLEAR_POST = 'CLEAR_POST'
 
 const getPostReducer = (state = {}, action) => {
-  console.log('get post reducer', action.article)
   switch (action.type) {
     case GET_POST:
       return { ...action.article }
+    case CLEAR_POST:
+      return {}
     default:
       return state
   }
